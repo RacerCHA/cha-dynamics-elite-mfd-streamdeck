@@ -1,0 +1,62 @@
+{
+  "UUID": "local.elite.mfd",
+  "Name": "CHA Dynamics MFD для Stream Deck",
+  "Category": "CHA Dynamics MFD",
+  "Author": "CHA Dynamics",
+  "Description": "Автоматическая корабельная панель Elite Dangerous для Stream Deck MK.1",
+  "Icon": "icon",
+  "CategoryIcon": "icon",
+  "CodePath": "panel.exe",
+  "SDKVersion": 2,
+  "Version": "2.5.1.0",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "6.6"
+  },
+  "Actions": [
+    {
+      "Name": "MFD Elite Dangerous",
+      "UUID": "local.elite.mfd.open",
+      "Icon": "icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "icon",
+          "ShowTitle": false
+        }
+      ],
+      "SupportedInMultiActions": false
+    },
+    {
+      "Name": "Экран корабля",
+      "UUID": "local.elite.mfd.cell",
+      "Icon": "icon",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "icon",
+          "ShowTitle": false
+        }
+      ],
+      "SupportedInMultiActions": false
+    }
+  ],
+  "Profiles": [
+    {
+      "Name": "Elite MFD",
+      "DeviceType": 0,
+      "AutoInstall": true,
+      "DontAutoSwitchWhenInstalled": true,
+      "Readonly": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+/dist/
+/tests/*.html
+/Combat *.html
+__pycache__/
